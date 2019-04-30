@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+
+  # get 'coupons/index'
+
+resources :coupons, only: [:index, :show, :new, :create]
+  # Build a RESTful index action
+  # Build a RESTful show action
+  # Build a RESTful new action
+  # Build a RESTful create action
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
