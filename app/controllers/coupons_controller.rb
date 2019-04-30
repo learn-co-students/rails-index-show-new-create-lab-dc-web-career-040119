@@ -9,13 +9,13 @@ class CouponsController < ApplicationController
 
   def show
     @coupon = Coupon.find(params[:id])
-    redirect_to @coupon
+    # redirect_to @coupon
   end
 
   def create
     coupon = Coupon.create(strong_params)
     # byebug
-     redirect_to coupon
+     redirect_to coupon_path(coupon.id)
   end
 
   private
