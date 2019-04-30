@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
 
-  # get 'coupons/index'
+  get 'coupons/index'
 
 resources :coupons, only: [:index, :show, :new, :create]
+
   # Build a RESTful index action
   # Build a RESTful show action
   # Build a RESTful new action

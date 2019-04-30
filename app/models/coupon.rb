@@ -1,10 +1,3 @@
 class Coupon < ApplicationRecord
-
-  def index
-    @coupons = Coupon.all
-  end
-
-  def show
-    @coupon = Coupon.find(params[:id])
-  end
+#the only thing that goes here is your relationships to other models.
 end
